@@ -6,8 +6,72 @@
     <title>Cadastro</title>
     <link rel="stylesheet" href="estilos/style.css">
     <link rel="stylesheet" href="estilos/media-query.css">
+    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
 </head>
 <body>
-    
+    <header id="cabecalho">
+        <img src="imagens/logo.png" alt="">
+        <nav>
+            <ul id="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projetos.html">Projetos</a></li>
+                <li><a href="#">Cadastro</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+       <section>
+           <h1>Cadastre-se para fazer parte da Bit por Bit</h1>
+           <p>Preencha o formulário ao lado para participar de nossos projetos ou se voluntariar.</p>
+           <img src="imagens/cadastro-form.jpg" alt="Ilustração do Formulário">
+           <form action="#" method="post">
+            <fieldset>
+                <legend>Informações Pessoais</legend>
+
+                <label for="nome">Nome Completo:</label>
+                <input type="text" name="nome" id="nome" placeholder="Digite seu nome completo" required minlength="3">
+
+                <label for="email">E-mail:</label>
+                <input type="email" name="email" id="email" placeholder="exemplo@email.com" required>
+                
+                <label for="cpf">CPF:</label>
+                <input type="text" name="cpf" id="cpf" placeholder="000.000.000-00" required pattern="\d{3}\.\d{3}\.\d{3}-\d{2}">
+
+                <label for="telefone">Telefone:</label>
+                <input type="tel" name="telefone" id="telefone" placeholder="(00) 00000-0000" required pattern="\(\d{2}\)\s?\d{5}-\d{4}">
+
+                <label for="nasc">Data de Nascimento:</label>
+                <input type="date" name="nasc" id="nasc">
+            </fieldset>
+            <fieldset>
+                <legend>Endereço</legend>
+                
+                <label for="endereco">Endereço:</label>
+                <input type="text" name="endereco" id="endereco" placeholder="Rua, número" required>
+
+                <label for="cep">CEP:</label>
+                <input type="text" name="cep" id="cep" placeholder="00000-000" required pattern="\d{5}-\d{3}">
+
+                <label for="cidade">Cidade:</label>
+                <input type="text" name="cidade" id="cidade" required>
+
+                <label for="uf">Estado:</label>
+                <input type="text" name="uf" id="uf" required>
+            </fieldset>
+            <input type="submit" value="Cadastrar">
+           </form>
+       </section>
+    </main>
+    <footer>
+        <img src="imagens/logo.png" alt="">
+        <h3>Contato</h3>
+        <address>
+            <p>Rua da Esperança, 123 — São Paulo, SP</p>
+            <p><a href="mailto:contato@bitporbit.org">contato@bitporbit.org</a></p>
+            <p><a href="tel:+5511999999999">(11) 99999-9999</a></p>
+        </address>
+        <small>© 2025 Bit por Bit — Todos os direitos reservados.</small>
+    </footer>
+    <script src="scripts/script.js"></script>
 </body>
 </html>
