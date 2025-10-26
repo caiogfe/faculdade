@@ -3,3 +3,72 @@
 @import url('https://fonts.googleapis.com/css2?family=Geo:ital@0;1&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 /*007ed5 042666*/
+
+:root {
+    /*paleta de cores*/
+    --cor-principal: #007ed5;     
+    --cor-secundaria: #042666;    
+    --cor-terciaria: #03CEA4;     
+    --cor-destaque: #FF7F11;     
+    --cor-fundo: #f5f7fa;        
+    --cor-texto: #1f1f1f;         
+    --cor-branca: #ffffff;  
+    --cor-preta: #000000;     
+
+    /*tipografia*/
+    --fonte-principal: 'Geo', sans-serif;
+    --fonte-secundaria: 'Montserrat', sans-serif;
+    --fonte-xxl: 2.5rem;  /*h1 principal*/
+    --fonte-xl: 2rem;     /*h2*/
+    --fonte-lg: 1.5rem;   /*h3*/
+    --fonte-md: 1rem;     /*texto normal*/
+    --fonte-sm: 0.875rem; /*observações, footer*/
+
+    /*espaçamento*/
+    --space-8: 8px;
+    --space-16: 16px;
+    --space-24: 24px;
+    --space-32: 32px;
+    --space-48: 48px;
+    --space-64: 64px;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--fonte-secundaria);
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    grid-area: header;
+    background-color: var(--cor-secundaria);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--space-24);
+}
+
+.menu {
+    display: flex;
+    gap: var(--space-16);
+}
+
+.menu a {
+    border-radius: 5px;
+    color: var(--cor-terciaria);
+    text-decoration: none;
+    font-weight: 600;
+    padding: var(--space-8);
+    transition: background 0.3s;
+}
+
+.menu a:hover {
+    background-color: var(--cor-terciaria);
+    color: var(--cor-secundaria);
+}
