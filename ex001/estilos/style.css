@@ -6,8 +6,8 @@
 
 :root {
     /*paleta de cores*/
-    --cor-principal: #007ed5;     
-    --cor-secundaria: #042666;    
+    --cor-principal: #042666;     
+    --cor-secundaria: #007ed5;    
     --cor-terciaria: #03CEA4;     
     --cor-destaque: #FF7F11;     
     --cor-fundo: #f5f7fa;        
@@ -52,7 +52,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: var(--cor-secundaria);
+    background-color: var(--cor-principal);
     padding: var(--space-16);
 }
 
@@ -80,7 +80,7 @@ body {
     text-align: right;
     top: 50px;
     right: 0px;
-    background: var(--cor-secundaria);
+    background: var(--cor-principal);
     padding: var(--space-24);  
     transition: transform 0.4s ease-out, opacity 0.4s ease-out;  
     transform: translateY(-20px);
@@ -103,7 +103,7 @@ body {
 }
 
 .nav-links a:hover {
-    color: var(--cor-principal);
+    color: var(--cor-secundaria);
     background-color: var(--cor-branca);
     border-radius: 5px;
     transition: .3s ease;
@@ -130,7 +130,7 @@ body {
 }
 
 .hamburger:hover span, .hamburger:focus span {
-    background: var(--cor-principal);
+    background: var(--cor-secundaria);
 }
 
 .hamburger:active span {
@@ -162,12 +162,52 @@ body {
 .main {
     grid-column: 1 / -1;
     background-color: var(--cor-branca);
-    
+    display: flex;
+    flex-direction: column;
+    max-width: 90%;
+    border-radius: 10px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.253);
+    margin: auto;
+    overflow: hidden;
 }
 
-.main img {
-    position: relative;
-    max-width: 50%;
+.home {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--cor-principal);
+}
+
+.home h1 {
+    font-family: var(--fonte-principal);
+    font-size: var(--fonte-xxl);
+    color: var(--cor-destaque);
+    text-align: center;
+    padding: var(--space-24);
+}
+
+.img-home {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.home img {
+    max-width: 100%;
+    padding: var(--space-24);
+}
+
+.sobre {
+    padding: var(--space-24);
+}
+
+.sobre h2 {
+    color: var(--cor-principal);
+    padding: var(--space-8) 0px;
+}
+
+.sobre p {
+    text-align: justify;
+    padding: var(--space-8) 0px;
 }
 
 .footer {
