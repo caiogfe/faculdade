@@ -10,7 +10,7 @@
     --cor-secundaria: #007ed5;    
     --cor-terciaria: #03CEA4;     
     --cor-destaque: #FF7F11;     
-    --cor-fundo: #f5f7fa;        
+    --cor-fundo: #ebf1f8;        
     --cor-texto: #1f1f1f;         
     --cor-branca: #ffffff;  
     --cor-preta: #000000;     
@@ -167,7 +167,7 @@ body {
     max-width: 90%;
     border-radius: 10px;
     box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.253);
-    margin: auto;
+    margin: var(--space-24) auto;
     overflow: hidden;
 }
 
@@ -177,7 +177,7 @@ body {
     background-color: var(--cor-principal);
 }
 
-.home h1 {
+main h1 {
     font-family: var(--fonte-principal);
     font-size: var(--fonte-xxl);
     color: var(--cor-destaque);
@@ -205,9 +205,67 @@ body {
     padding: var(--space-8) 0px;
 }
 
-.sobre p {
+.p-padrao p {
     text-align: justify;
     padding: var(--space-8) 0px;
+}
+
+.projetos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.tipo-projeto {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 80%;
+    max-width: 300px;
+    background-color: var(--cor-fundo);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.250);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding: var(--space-24);
+    margin: var(--space-32) auto;
+}
+
+.tipo-projeto:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.400);
+}
+
+.tipo-projeto h2 {
+    text-align: center;
+}
+
+.tipo-projeto p {
+    text-align: justify;
+    font-size: var(--fonte-sm);
+    padding: var(--space-8) 0px;
+}
+
+.tipo-projeto img {
+    width: 100%;
+    padding: var(--space-16) 0px;
+}
+
+.doacao-projeto {
+    width: 100%;
+    background-color: var(--cor-secundaria);
+    color: white;
+    font-size: var(--fonte-md);
+    font-weight: 600;
+    border-style: none;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+    padding: var(--space-16);
+}
+
+.doacao-projeto:hover {
+    background-color: var(--cor-principal);
+    cursor: pointer;
 }
 
 .footer {
@@ -248,6 +306,7 @@ body {
 
 .footer small {
     background-color: var(--cor-principal);
+    color: var(--cor-branca);
     width: 100%;
     text-align: center;
     padding: var(--space-16) 0px;
