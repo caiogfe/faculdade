@@ -212,9 +212,44 @@ body {
 
 .footer {
     grid-column: 1 / -1;
+    display: flex;
+    flex-flow: wrap;
 }
 
 .footer img {
-    position: relative;
-    max-width: 50%;
+    display: block;
+    width: 100px;
+    height: auto;
+    padding: var(--space-16);
+}
+
+.info-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: var(--cor-secundaria);
+    color: var(--cor-branca);
+    text-decoration: none;
+    padding: var(--space-24) 0px;
+}
+    
+.contato-footer {
+    display: flex;
+    flex-direction: column;
+    margin: var(--space-16);
+    text-align: right;
+}
+
+.contato-footer address p, .contato-footer address a {
+    font-size: var(--fonte-sm);
+    color: var(--cor-branca);
+}
+
+.footer small {
+    background-color: var(--cor-principal);
+    width: 100%;
+    text-align: center;
+    padding: var(--space-16) 0px;
+    font-weight: 600;
 }
