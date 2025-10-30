@@ -281,8 +281,13 @@ main h1 {
     align-items: center;
 }
 
+.formulario picture {
+    display: flex;
+    justify-content: center;
+}
+
 .formulario img {
-    max-width: 300px;
+    max-width: 80%;
     width: 100%;
 }
 

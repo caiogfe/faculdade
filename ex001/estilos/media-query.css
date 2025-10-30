@@ -71,19 +71,25 @@ grandes telas: acima de 1201px
     }
 
     .formulario {
+        display: flex;
         flex-direction: row;
         justify-content: center;
-        align-items: flex-start;
-        gap: var(--space-48);
-        max-width: 1200px;
-        margin: 0 auto;
-        padding: var(--space-48);
+        align-items: center;
+        padding: var(--space-32);
+    }
+
+    .formulario picture {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     .formulario img {
-        flex: 1;
-        max-width: 450px;
-        align-self: center;
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        object-position: center;
     }
 
     .formulario form {
