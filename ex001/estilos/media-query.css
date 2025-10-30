@@ -8,18 +8,86 @@ desktop: 1025px a 1200px
 grandes telas: acima de 1201px
 */
 
-@media screen and (min-width: 481px) and (max-width: 768px) {
+:root {
+    /*paleta de cores*/
+    --cor-principal: #042666;     
+    --cor-secundaria: #007ed5;    
+    --cor-terciaria: #03CEA4;     
+    --cor-destaque: #FF7F11;     
+    --cor-fundo: #ebf1f8;        
+    --cor-texto: #1f1f1f;         
+    --cor-branca: #ffffff;  
+    --cor-preta: #000000;     
+
+    /*tipografia*/
+    --fonte-principal: 'Geo', sans-serif;
+    --fonte-secundaria: 'Montserrat', sans-serif;
+    --fonte-xxl: 2.5rem;  /*h1 principal*/
+    --fonte-xl: 2rem;     /*h2*/
+    --fonte-lg: 1.5rem;   /*h3*/
+    --fonte-md: 1rem;     /*texto normal*/
+    --fonte-sm: 0.875rem; /*observações, footer*/
+
+    /*espaçamento*/
+    --space-8: 8px;
+    --space-16: 16px;
+    --space-24: 24px;
+    --space-32: 32px;
+    --space-48: 48px;
+    --space-64: 64px;
+}
+
+@media screen and (min-width: 481px) and (max-width: 1024px) {
 
 }
 
-@media screen and (min-width: 769px) and (max-width: 1024px) {
+@media screen and (min-width: 1025px) {
+    .header {
+        align-items: center;
+        padding-bottom: var(--space-32);
+    }
+    
+    .menu {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .hamburger {
+        display: none;
+    }
 
-}
+    .nav-links {
+        display: flex;
+        font-size: 1vw;
+        flex-direction: row;
+        justify-content: center;
+        position: static;
+        opacity: 1;
+        pointer-events: auto;
+        transform: none;
+        transition: none;
+        padding: 0;
+    }
 
-@media screen and (min-width: 1025px) and (max-width: 1200px) {
+    .formulario {
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+        gap: var(--space-48);
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: var(--space-48);
+    }
 
-}
+    .formulario img {
+        flex: 1;
+        max-width: 450px;
+        align-self: center;
+    }
 
-@media screen and (min-width: 1201px) {
-
+    .formulario form {
+        flex: 1;
+        max-width: 600px;
+    }
 }
