@@ -70,6 +70,17 @@ grandes telas: acima de 1201px
         padding: 0;
     }
 
+    .sobre {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .p-padrao {
+        max-width: 60%;
+        margin: auto;
+    }
+
     .formulario {
         display: flex;
         flex-direction: row;

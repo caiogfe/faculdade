@@ -207,6 +207,10 @@ main h1 {
     padding: var(--space-8) 0px;
 }
 
+.p-padrao {
+    padding-bottom: var(--space-24);
+}
+
 .p-padrao p {
     text-align: justify;
     padding: var(--space-8) 0px;
